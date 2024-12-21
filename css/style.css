@@ -285,6 +285,7 @@ hr {
   font-size: var(--font-size-md);
   position: absolute;
   width: 100%;
+  padding: 10px 0;
 }
 
 .fixed-navbar {
@@ -311,7 +312,7 @@ hr {
 
 /* For SVG logos, we can use fill to apply the primary color */
 .custom-navbar .navbar-brand .navbar-logo {
-  width: 70px;
+  width: 60px;
   height: auto;
   fill: var(--primary-color);
 }
@@ -552,6 +553,8 @@ hr {
 }
 
 .hero-section .hero-image {
+  background-image: url(../images/fm.png);
+  background-size: contain;
   flex: 1;
   /* القسم الأيسر يأخذ النصف الآخر */
   text-align: center;
