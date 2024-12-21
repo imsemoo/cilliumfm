@@ -1,0 +1,781 @@
+
+
+html {
+  line-height: 1.15;
+  /* Set a sensible line-height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevent adjustments of font size after orientation changes in iOS */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+  border: none;
+  border-top: 1px solid;
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  cursor: pointer;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* =========================================
+     Global Variables and Base Styles
+  ========================================= */
+
+:root {
+  /* ==============================
+       Primary Theme Colors
+       ============================== */
+  --primary-color: #2085C1;
+  /* Curious Blue */
+  --primary-color-dark: #0C2463;
+  /* Madison */
+  --primary-color-light: #07ACEB;
+  /* Cerulean */
+
+  /* ==============================
+          Secondary Colors
+          ============================== */
+  --secondary-color: #C08087;
+  /* Old Rose */
+  --secondary-color-light: #E2B8C0;
+  /* Lighter shade of Old Rose */
+  --secondary-color-dark: #8E5D63;
+  /* Darker shade of Old Rose */
+
+  /* ==============================
+          Neutral Colors
+          ============================== */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-gray-100: #F7F7F7;
+  --color-gray-200: #E0E0E0;
+  --color-gray-500: #9E9E9E;
+  --color-gray-700: #616161;
+
+  /* ==============================
+          Text Colors
+          ============================== */
+  --text-color: var(--primary-color-dark);
+  --text-color-secondary: var(--secondary-color-dark);
+  --text-color-light: var(--color-white);
+
+  /* ==============================
+          Background Colors
+          ============================== */
+  --background-color: var(--color-gray-100);
+  --background-color-secondary: var(--color-gray-200);
+
+  /* ==============================
+          Buttons and Links
+          ============================== */
+  --button-bg: var(--color-primary);
+  --button-bg-hover: var(--primary-color-dark);
+  --button-text: var(--color-white);
+
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--primary-color-dark);
+
+  /* Typography */
+  --font-family-base: 'Tajawal', 'Noto Sans Arabic', Arial, sans-serif;
+  --font-family-headings: 'Tajawal', 'Noto Sans Arabic', Arial, sans-serif;
+
+  /* Font Sizes (example scale) */
+  --font-size-xs: 0.75rem;
+  /* 12px */
+  --font-size-sm: 0.875rem;
+  /* 14px */
+  --font-size-md: 1rem;
+  /* 16px base */
+  --font-size-lg: 1.125rem;
+  /* 18px */
+  --font-size-xl: 1.25rem;
+  /* 20px */
+  --font-size-2xl: 1.5rem;
+  /* 24px */
+  --font-size-3xl: 1.875rem;
+  /* 30px */
+  --font-size-4xl: 2.25rem;
+  /* 36px */
+
+  /* Line Heights */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing Scale (margin/padding) */
+  --spacing-xs: 0.25rem;
+  /* 4px */
+  --spacing-sm: 0.5rem;
+  /* 8px */
+  --spacing-md: 1rem;
+  /* 16px */
+  --spacing-lg: 1.5rem;
+  /* 24px */
+  --spacing-xl: 2rem;
+  /* 32px */
+
+  /* Border Radius */
+  --border-radius: 0.25rem;
+  /* 4px */
+}
+
+/* =========================================
+     Global Base Styles
+  ========================================= */
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+  text-align: right;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+  color: var(--heading-color);
+  line-height: var(--line-height-heading);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+  /* Headings often look good in a bold weight */
+}
+
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  color: var(--text-color);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-md) 0;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+  background-color: transparent;
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+  position: absolute;
+  width: 100%;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  /* لضمان بقاء النافبار فوق باقي العناصر */
+  background-color: var(--background-color);
+  /* لون الخلفية عند التثبيت */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* تأثير ظل خفيف */
+  transition: all 0.3s ease;
+  /* تأثير ناعم عند التبديل */
+}
+
+/* RTL Adjustments for Navbar */
+.custom-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* For SVG logos, we can use fill to apply the primary color */
+.custom-navbar .navbar-brand .navbar-logo {
+  width: 70px;
+  height: auto;
+  fill: var(--primary-color);
+}
+
+/* Nav Links */
+.custom-navbar .navbar-nav .nav-link {
+  color: #FFFFFF;
+  margin-inline: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.fixed-navbar .navbar-nav .nav-link {
+  color: var(--primary-color-dark);
+}
+
+/* Active/Hover states */
+.custom-navbar .navbar-nav .nav-link.active,
+.custom-navbar .navbar-nav .nav-link:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Toggler Icon */
+.custom-navbar .navbar-toggler {
+  border: none;
+}
+
+/* In RTL, the toggler icon remains the same visually, but its position changes */
+.custom-navbar .navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-color);
+  position: relative;
+}
+
+.custom-navbar .navbar-toggler-icon::before,
+.custom-navbar .navbar-toggler-icon::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: var(--text-color);
+  position: absolute;
+  right: 0;
+  /* Align to the right since RTL */
+  transition: transform 0.3s;
+}
+
+.custom-navbar .navbar-toggler-icon::before {
+  top: -6px;
+}
+
+.custom-navbar .navbar-toggler-icon::after {
+  top: 6px;
+}
+
+/* Search Form (RTL adjustments) 
+   Instead of margin-left, we use margin-inline-end for the space before the search form.
+*/
+.custom-navbar .search-form {
+  position: relative;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+
+.custom-navbar .search-input:focus {
+  width: 200px;
+  box-shadow: none;
+}
+
+.search-input {
+  border: none;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-color);
+  background-color: var(--color-white);
+  outline: none;
+  width: 100px;
+  /* Adjust as needed */
+  transition: width 0.3s ease;
+}
+
+.search-button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  padding: var(--spacing-sm) var(--spacing-md);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-navbar .search-button:hover {
+  background-color: #2a9aa9;
+  /* Slightly darker shade of primary */
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 2rem 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-md);
+}
+
+.footer .footer-logo {
+  width: 100px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.footer .search-form .search-input {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+.footer .search-form .search-input::placeholder {
+  color: #bfbfbf;
+}
+
+.footer .search-form .search-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.footer .search-form .search-button:hover {
+  background-color: #2a9aa9;
+}
+
+.footer .social-icons a {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+.footer .search-form .search-input:focus {
+  width: 200px;
+}
+
+.footer .social-icons a:hover {
+  color: #2a9aa9;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.footer .footer-bottom {
+  background-color: #0f0f0f;
+  color: #bfbfbf;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.footer .footer-bottom p {
+  margin: 0;
+}
+
+
+
+
+/* ==============================
+   Hero Section Styling
+============================== */
+.hero-section {
+  background-color: #0b1834;
+  background-image: url(../images/banner-bg.png);
+  padding: var(--spacing-lg);
+  padding-top: 90px;
+  height: 100vh;
+}
+
+.hero-section .hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.hero-section .hero-content {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-section .hero-content .program-title {
+  font-size: 52px;
+  color: #FFFFFF;
+  margin-bottom: var(--spacing-md);
+  font-weight: bold;
+}
+
+.hero-section .hero-content .program-description {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+  line-height: 1.8;
+}
+
+.hero-section .hero-content .program-details p {
+  font-size:14px;
+  color: #FFFFFF;
+  margin-bottom: var(--spacing-xs);
+}
+
+.hero-section .hero-content .listen-now-btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-lg);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .hero-content .listen-now-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.hero-section .hero-image {
+  flex: 1;
+  /* القسم الأيسر يأخذ النصف الآخر */
+  text-align: center;
+
+  /* لجعل الصورة في الوسط */
+}
+
+.hero-section .hero-image img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  /* إضافة زوايا دائرية للصورة */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* تأثير ظل لطيف */
+}
+
+/* ==============================
+ Responsive Styling
+============================== */
+@media (max-width: 768px) {
+  .hero-section .hero-container {
+    flex-direction: column;
+    /* تحويل الاتجاه إلى عمودي */
+    text-align: center;
+  }
+
+  .hero-section .hero-content {
+    text-align: center;
+    /* محاذاة النص في المنتصف */
+  }
+}
+
+
+
+
+.song1_wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #071126;
+  width: 100%;
+}
+
+
+.song1_wrapper .song1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song1 .left {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.song1 .left figure {
+  margin: 0;
+}
+
+.song1 .caption {
+  float: left;
+  padding-top: 15px;
+}
+
+.song1 .caption .txt1 {
+  font-size: 18px;
+  color: #e5e1d8;
+}
+
+.song1 .caption .txt2 {
+  font-size: 14px;
+  color: #0c9ec3;
+}
+
+/* ============================= audio1 ====================== */
+.audio1 {
+  width: 650px;
+  position: relative;
+  margin-top: 32px;
+}
+
+.audio1 .mejs-container {
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+  height: auto !important;
+}
+
+.audio1 .mejs-container .mejs-controls {
+  top: 0;
+  background: none;
+  height: 30px;
+  position: relative;
+}
+
+.audio1 .mejs-container .mejs-controls div {
+  font-size: 14px;
+  font-family: inherit;
+  line-height: 1;
+}
+
+.audio1 .mejs-controls a.mejs-horizontal-volume-slider {
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.audio1 .mejs-controls .mejs-button button:focus {
+  outline: none;
+}
+
+
+.audio1 .mejs-controls .mejs-cust1-button button {
+  background: url(../images/btn-prev.png) center center no-repeat;
+}
+
+.audio1 .mejs-controls .mejs-playpause-button {
+  width: 70px;
+  height: 45px;
+}
+
+.audio1 .mejs-controls .mejs-play button {
+  width: 70px;
+  height: 45px;
+  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: url(../images/btn-play.png) center center no-repeat;
+  margin: 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  top: -8px;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.audio1 .mejs-controls .mejs-play button:hover {
+  border-color: #fff;
+}
+
+.audio1 .mejs-controls .mejs-pause button {
+  width: 70px;
+  height: 45px;
+  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: url(../images/btn-pause.png) center center no-repeat;
+  margin: 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  top: -8px;
+  transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.audio1 .mejs-controls .mejs-pause button:hover {
+  border-color: #fff;
+}
+
+.audio1 .mejs-controls .mejs-cust2-button button {
+  background: url(../images/btn-next.png) center center no-repeat;
+}
+
+.audio1 .mejs-container .mejs-controls .mejs-time {
+  padding-top: 8px;
+}
+
+.audio1 .mejs-controls .mejs-cust3-button {
+  margin: 0 5px;
+}
+
+.audio1 .mejs-controls .mejs-cust3-button button {
+  background: url(../images/btn-repeat.png) center center no-repeat;
+}
+
+.audio1 .mejs-controls .mejs-cust4-button {
+  margin: 0 5px;
+}
+
+.audio1 .mejs-controls .mejs-cust4-button button {
+  background: url(../images/btn-change.png) center center no-repeat;
+}
+
+.audio1 .mejs-controls div.mejs-time-rail {
+  padding-top: 9px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-total {
+  background: #756a66;
+  height: 3px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-buffering {
+  height: 3px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background: #988986;
+  height: 3px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #0c9ec3;
+  height: 3px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-handle {
+  height: 3px;
+}
+
+.audio1 .mejs-controls .mejs-time-rail .mejs-time-float {
+  font-size: 12px;
+}
+.audio1 .mejs-controls .mejs-cust1-button button {
+  background: url(../images/btn-prev.png) center center no-repeat;
+}
+
+.audio1 .mejs-controls .mejs-cust2-button button {
+  background: url(../images/btn-next.png) center center no-repeat;
+}
+
+/* ============================= audio1 end ====================== */
