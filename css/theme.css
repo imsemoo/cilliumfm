@@ -756,7 +756,8 @@ span.post-comment span {
 	transition: all 0.4s ease-in-out;
 }
 .utf_post_block_style .utf_post_content p {
-	font-size: 15px;
+	font-size: 14px;
+	color: #333;
     font-weight: 600;
 }
 .utf_post_block_style .utf_post_cat {
@@ -1588,7 +1589,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
 	position: absolute;
 	z-index: 1;
 	top: -67px;
-	right: 0;
+	left: 0;
 	margin: 0 !important;
 }
 .owl-theme.owl-carousel .owl-dots .owl-dot span {
@@ -2066,10 +2067,10 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
 /* More news
 ================================================== */
 .utf_post_block_style.utf_post_float_half .utf_post_thumb {
-	float: left;
+	float: right;
 	position: relative;
 	z-index: 1;
-	margin-right: 30px;
+	margin-left: 30px;
 }
 .utf_post_block_style.utf_post_float_half .utf_post_thumb img {
 	max-width: 300px;
@@ -2108,7 +2109,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
 	margin: 0 0 40px;
 	text-transform: uppercase;
 	color: #fff;
-	padding-left:15px;
+	padding-right:15px;
 	padding-top:8px;
 	position:relative;
 }
@@ -2117,7 +2118,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
     top: 0;
     content: '';
     background:#ec0000;
-    left: 0;
+    right: 0;
 	border-radius:30px;
 }
 .footer .widget-title:before {
@@ -2142,7 +2143,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
     padding-bottom: 7px;
 }
 .footer .widget-categories ul li i{
-	margin-right:8px;
+	margin-left:8px;
 }
 .footer .widget-categories ul li a:hover{
 	color:#ec0000;
@@ -2171,7 +2172,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
     font-weight: 700;
 }
 .footer-widget.widget-categories ul li .catCounter {
-	float: right;
+	float: left;
 }
 .contact-widget ul li {
 	position: relative;
@@ -2184,7 +2185,7 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
 	margin-bottom:20px;
 }
 .contact-widget ul li i{
-	padding-right: 8px;
+	padding-left: 8px;
 	width: 24px;
 	text-align: center;
 	color: #ec0000;
@@ -2284,13 +2285,15 @@ ul.nav li.dropdown .utf_dropdown_menu li.utf_dropdown_submenu:hover .utf_dropdow
 	margin-left:0; 
 }
 .utf_footer_social li a i {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 32px;
 	height: 32px;
 	line-height: 32px;
 	font-size: 14px;
 	color: #fff;
-	padding-right:0;
+	padding: 0;
 	border-radius:30px;
 	background: #ec0000;
 	text-align: center;
