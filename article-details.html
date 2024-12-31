@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title: استخدم عنوان واضح يعكس هوية الموقع -->
+        <title>فلسطين بوست - أخبار فلسطينية موثوقة وشاملة</title>
+
+        <!-- Meta Description: وصف قصير يعكس محتوى الموقع ورسالة المنصة -->
+        <meta name="description"
+            content="فلسطين بوست: منصة إعلامية تأسست عام 2015، تقدم تغطية موثوقة وشاملة للأحداث والقضايا الفلسطينية، وتعزز صحافة المواطن ضمن معايير احترافية.">
+
+        <!-- Meta Keywords: كلمات مفتاحية تعكس طبيعة الموقع -->
+        <meta name="keywords"
+            content="فلسطين بوست, أخبار فلسطين, صحافة المواطن, قضايا فلسطينية, إعلام فلسطيني, أخبار عاجلة, تحليلات سياسية">
+
+        <!-- Robots Meta -->
+        <meta name="robots" content="index, follow">
+
+        <!-- Canonical Link: للتأكيد على النسخة الأساسية للصفحة -->
+        <link rel="canonical" href="https://www.ppost.ps/" />
+
+        <!-- Open Graph Meta Tags: لتحسين المشاركة على الشبكات الاجتماعية -->
+        <meta property="og:title" content="فلسطين بوست - أخبار فلسطينية موثوقة">
+        <meta property="og:description"
+            content="تابع آخر الأخبار والتقارير حول القضايا الفلسطينية، مقالات وتحليلات معمّقة ونقل موثوق للأحداث من فلسطين والعالم.">
+        <meta property="og:image" content="https://www.ppost.ps/images/og-image.png">
+        <meta property="og:url" content="https://www.ppost.ps/">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ar_AR" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="فلسطين بوست - أخبار فلسطينية موثوقة">
+        <meta name="twitter:description"
+            content="منصة إعلامية فلسطينية تقدم تقارير وأخباراً موثوقة حول قضايا فلسطين، تغطية شاملة وتحليلات دقيقة.">
+        <meta name="twitter:image" content="https://www.ppost.ps/images/twitter-image.png">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon-32x32.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="css/mediaelementplayer.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Flatpickr CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <!-- Flatpickr Script -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <!-- Flatpickr Arabic Localization -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar blue-navbar ">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                    <img src="images/logo.png" alt="شعار فلسطين بوست" class="navbar-logo">
+                </a>
+
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search.html">النتائج</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="posts.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="article-details.html">تفاصيل المقال</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search Form -->
+                    <!-- <form class="d-flex align-items-center search-form">
+          <input class="form-control search-input" type="search" placeholder="بحث" aria-label="Search">
+          <button class="btn search-button" type="submit">بحث</button>
+        </form> -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">الرئيسية</a></li>
+                            <li><a href="#">المقالات</a></li>
+                            <li>تفاصيل المقال</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="utf_block_wrapper"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="single-post">
+                            <div class="utf_post_title-area">
+                                <a class="utf_post_cat" href="#">الصحة</a>
+                                <h2 class="utf_post_title"> وسائل التواصل الاجتماعي وتأثيرها على حياة الناس </h2>
+                                <div class="utf_post_meta">
+                                    <span class="utf_post_author"> بواسطة <a href="#">سماح القرمازي</a> </span>
+                                    <span class="utf_post_date"><i class="fa-regular fa-clock"></i> 14 يناير, 2022</span>
+                                    <span class="post-hits"><i class="fa fa-eye"></i> 21</span>
+                                    <span class="post-comment"><i class="fa-regular fa-comment"></i> <a href="#" class="comments-link"><span>01</span></a></span>
+                                </div>
+                            </div>
+                            <div class="utf_post_content-area">
+                                <div class="post-media post-featured-image">
+                                    <img src="https://dummyimage.com/800x400/ddd/000" alt="الصورة الرئيسية">
+                                </div>
+                                <div class="entry-content">
+                                    <p>هنا يمكنك كتابة نص عن تأثير وسائل التواصل الاجتماعي على الصحة النفسية والجسدية. النص يمكن أن يشرح المخاطر والفوائد مع تقديم نصائح لتحسين استخدام هذه الوسائل.</p>
+                                    <blockquote>وسائل التواصل الاجتماعي يمكن أن تكون أداة قوية إذا تم استخدامها بحكمة.</blockquote>
+                                    <p>تأكد من توازن وقتك بين الأنشطة الحقيقية والافتراضية لتحسين حالتك النفسية.</p>
+                                    <ul class="list-round mr_bottom-20">
+                                        <li>قلل من الوقت الذي تقضيه على الهاتف.</li>
+                                        <li>خصص وقتًا للتواصل الواقعي مع العائلة والأصدقاء.</li>
+                                        <li>مارس الأنشطة البدنية بانتظام.</li>
+                                        <li>اختر محتوى هادف ومفيد.</li>
+                                    </ul>
+                                </div>
+        
+                                <div class="tags-area clearfix">
+                                    <div class="post-tags">
+                                        <span>التصنيفات:</span>
+                                        <a href="#">#الصحة</a>
+                                        <a href="#">#التكنولوجيا</a>
+                                        <a href="#">#المجتمع</a>
+                                    </div>
+                                </div>
+        
+                                <div class="share-items clearfix">
+                                    <ul class="post-social-icons unstyled">
+                                        <li class="facebook">
+                                            <a href="#"><i class="fab fa-facebook-f"></i> <span>فيسبوك</span></a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#"><i class="fab fa-twitter"></i> <span>تويتر</span></a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#"><i class="fab fa-instagram"></i> <span>إنستجرام</span></a>
+                                        </li>
+                                        <li class="pinterest">
+                                            <a href="#"><i class="fab fa-pinterest"></i> <span>بنترست</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+        
+                        <nav class="post-navigation clearfix">
+                            <div class="post-previous">
+                                <a href="#"> 
+                                    <span>
+                                         المقال التالي
+                                         <i class="fa fa-angle-left"></i>
+                                        </span>
+                                    <h3> تأثير التكنولوجيا الحديثة على حياتنا اليومية </h3>
+                                </a>
+                            </div>
+                            <div class="post-next">
+                                <a href="#"> 
+                                    <span>
+                                        <i class="fa fa-angle-right"></i>
+                                        المقال السابق 
+                                    </span>
+                                    <h3> كيفية الحفاظ على توازن حياتك في العصر الرقمي </h3>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="author-box">
+                            <div class="author-img pull-left"> 
+                                <img src="https://dummyimage.com/100x100/ddd/000" alt=""> 
+                            </div>
+                            <div class="author-info">
+                                <h3>سماح القرمازي</h3>
+                                <p>إعلامية مختصة في البرامج الاجتماعية. تسعى دائمًا لتقديم محتوى هادف يلامس قضايا المجتمع.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="comments" class="comments-area block">
+                            <h3 class="utf_block_title"><span>3 تعليقات</span></h3>
+                            <ul class="comments-list">
+                                <li>
+                                    <div class="comment"> 
+                                        <img class="comment-avatar pull-left" alt="" src="https://dummyimage.com/50x50/ddd/000">
+                                        <div class="comment-body">
+                                            <div class="meta-data"> 
+                                                <span class="comment-author">محمد أحمد</span> 
+                                                <span class="comment-date pull-right">15 يناير, 2022</span> 
+                                            </div>
+                                            <div class="comment-content">
+                                                <p>مقال رائع جدًا، استفدت كثيرًا من النصائح المتعلقة باستخدام وسائل التواصل الاجتماعي.</p>
+                                            </div>
+                                            <div class="text-left"> 
+                                                <a class="comment-reply" href="#"><i class="fa fa-share"></i> رد</a> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="comments-reply">
+                                        <li>
+                                            <div class="comment"> 
+                                                <img class="comment-avatar pull-left" alt="" src="https://dummyimage.com/50x50/ccc/000">
+                                                <div class="comment-body">
+                                                    <div class="meta-data"> 
+                                                        <span class="comment-author">سماح القرمازي</span> 
+                                                        <span class="comment-date pull-right">15 يناير, 2022</span> 
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <p>شكرًا لتعليقك، سعيد أن المقال كان مفيدًا لك.</p>
+                                                    </div>
+                                                    <div class="text-left"> 
+                                                        <a class="comment-reply" href="#"><i class="fa fa-share"></i> رد</a> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="comments-form">
+                            <h3 class="title-normal">أترك تعليقك</h3>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="name" id="name" placeholder="الاسم" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="email" id="email" placeholder="البريد الإلكتروني" type="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="phone" id="phone" placeholder="رقم الهاتف" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="الموضوع" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control required-field" id="message" placeholder="تعليقك" rows="10" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <button class="comments-btn btn btn-primary" type="submit">إرسال التعليق</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="related-posts block">
+                            <h3 class="utf_block_title"><span>منشورات ذات صلة</span></h3>
+                            <div class="owl-carousel owl-theme utf_latest_news_slide">
+                                <div class="item">
+                                    <div class="utf_post_block_style clearfix">
+                                        <div class="utf_post_thumb"> 
+                                            <a href="#"><img class="img-fluid" src="https://dummyimage.com/262x150/ddd/000" alt=""></a> 
+                                        </div>
+                                        <a class="utf_post_cat" href="#">الصحة</a>
+                                        <div class="utf_post_content">
+                                            <h2 class="utf_post_title title-medium"> <a href="#">كيفية تحسين صحتك النفسية في ظل التحديات الرقمية</a> </h2>
+                                            <div class="utf_post_meta"> 
+                                                <span class="utf_post_date"><i class="fa-regular fa-clock"></i> 25 يناير, 2022</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="utf_post_block_style clearfix">
+                                        <div class="utf_post_thumb"> 
+                                            <a href="#"><img class="img-fluid" src="https://dummyimage.com/262x150/eee/000" alt=""></a> 
+                                        </div>
+                                        <a class="utf_post_cat" href="#">السفر</a>
+                                        <div class="utf_post_content">
+                                            <h2 class="utf_post_title title-medium"> <a href="#">أفضل الوجهات للسفر في عام 2022</a> </h2>
+                                            <div class="utf_post_meta"> 
+                                                <span class="utf_post_date"><i class="fa-regular fa-clock"></i> 22 يناير, 2022</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                                                        
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <footer id="footer" class="footer">
+            <div class="utf_footer_main">
+                <div class="container">
+                    <div class="row">
+                        <!-- About Us Section -->
+                        <div class="col-lg-4 col-sm-12 col-xs-12 footer-widget contact-widget">
+                            <h3 class="widget-title">عن الإذاعة</h3>
+                            <ul>
+                                <li>إذاعة سليوم تقدم لكم أفضل البرامج الإذاعية وأحدث الأخبار والتقارير اليومية في جميع
+                                    المجالات.</li>
+                                <li><i class="fa fa-home"></i> شارع الإذاعة، مدينة سليوم، تونس</li>
+                                <li><i class="fa fa-phone"></i> <a href="tel:+21612345678">+216 12 345 678</a></li>
+                                <li><i class="fa-regular fa-envelope"></i> <a
+                                        href="mailto:info@seliumradio.com">info@seliumradio.com</a></li>
+                            </ul>
+                            <ul class="unstyled utf_footer_social">
+                                <li><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a title="YouTube" href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Categories Section -->
+                        <div class="col-lg-4 col-sm-12 col-xs-12 footer-widget widget-categories " style="z-index: 9;">
+                            <h3 class="widget-title">الأقسام الشهيرة</h3>
+                            <ul>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">الأخبار</span><span class="catCounter"> (05)</span></a>
+                                </li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">الرياضة</span><span class="catCounter"> (06)</span></a>
+                                </li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">الثقافة</span><span class="catCounter"> (15)</span></a>
+                                </li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">التكنولوجيا</span><span class="catCounter"> (25)</span></a>
+                                </li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">الصحة</span><span class="catCounter"> (05)</span></a></li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">المنوعات</span><span class="catCounter"> (12)</span></a>
+                                </li>
+                                <li><i class="fa fa-angle-double-left"></i><a href="#"><span
+                                            class="catTitle">الأغاني</span><span class="catCounter"> (14)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Posts Section -->
+                        <div class="col-lg-4 col-sm-12 col-xs-12 footer-widget">
+                            <h3 class="widget-title">أشهر المقالات</h3>
+                            <div class="utf_list_post_block">
+                                <ul class="utf_list_post">
+                                    <li class="clearfix">
+                                        <div class="utf_post_block_style post-float clearfix">
+                                            <div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
+                                                        src="https://dummyimage.com/150x100/cccccc/000000"
+                                                        alt="أحدث الأخبار"> </a> </div>
+                                            <div class="utf_post_content">
+                                                <h2 class="utf_post_title title-small"> <a href="#">ملخص أبرز الأخبار
+                                                        لهذا الأسبوع.</a> </h2>
+                                                <div class="utf_post_meta"> <span class="utf_post_date"><i
+                                                            class="fa-regular fa-clock"></i> 21 ديسمبر 2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="clearfix">
+                                        <div class="utf_post_block_style post-float clearfix">
+                                            <div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
+                                                        src="https://dummyimage.com/150x100/cccccc/000000"
+                                                        alt="برنامج جديد"> </a> </div>
+                                            <div class="utf_post_content">
+                                                <h2 class="utf_post_title title-small"> <a href="#">اكتشف أحدث البرامج
+                                                        الإذاعية.</a> </h2>
+                                                <div class="utf_post_meta"> <span class="utf_post_date"><i
+                                                            class="fa-regular fa-clock"></i> 21 ديسمبر 2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="clearfix">
+                                        <div class="utf_post_block_style post-float clearfix">
+                                            <div class="utf_post_thumb"> <a href="#"> <img class="img-fluid"
+                                                        src="https://dummyimage.com/150x100/cccccc/000000"
+                                                        alt="مواضيع ثقافية"> </a> </div>
+                                            <div class="utf_post_content">
+                                                <h2 class="utf_post_title title-small"> <a href="#">مقالات ثقافية وفكرية
+                                                        مميزة.</a> </h2>
+                                                <div class="utf_post_meta"> <span class="utf_post_date"><i
+                                                            class="fa-regular fa-clock"></i> 21 ديسمبر 2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 text-center">
+                        <div class="utf_copyright_info">
+                            <span>جميع الحقوق محفوظة © 2022 - موقع سيليوم. تصميم وتنفيذ بواسطة شركة تكتيك.</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="back-to-top" class="back-to-top">
+                    <button class="btn btn-primary" title="العودة إلى الأعلى">
+                        <i class="fas fa-angle-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <script src="js/mediaelement-and-player.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </body>
+
+</html>
